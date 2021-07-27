@@ -1,0 +1,24 @@
+.campanies {
+    padding:  0 0 5rem 0;
+
+    &__logo-box {
+        max-width: 100%;
+        height: 5rem;
+        margin-bottom: 2rem;
+        padding: 0.5rem;
+        text-align: center;
+        position: relative;
+
+        img {
+            height: 100%;
+
+            &:hover {// cuando se pasa el mouse poray 
+                filter: grayscale(120);
+            }
+        }
+    }
+}
+
+h4{
+    font-family: 'Ubuntu', sans-serif;
+}

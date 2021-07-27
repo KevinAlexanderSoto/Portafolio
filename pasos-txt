@@ -1,0 +1,8 @@
+- definimos como va a ser nuestra pagina 
+- empezamos haciendo en header
+  - dentro del header lo hacemos container , luego amadimos nuestro logo de manera          responsiva
+  - hacemos el sistema de grillas
+  - luego del logo , colocamos el menu de navegacion , que tmabien es responsivo
+  -  cambiamos el tamaño a nuestras letras del menu 
+
+- luego se paso son el footer , al cual le añadimos las grillas y colocamos un nav          horizontal y lo hicimos responsivo 

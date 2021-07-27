@@ -1,0 +1,28 @@
+@use '../custom' as *;
+@use '../components/mixins' as *;// llama los modulos
+
+.menu {
+    @include gradient;// usa la "funcion " de /components/mixins
+
+    img{// modifico el tamaño de mi logo
+      width: 18rem;
+     
+    }
+
+    li {// modifico la lista 
+      padding: 0 0.7rem;
+
+      a {
+        color: $dark !important;// cambiar color de la letra del menu 
+        padding: 0 0.7rem;
+        text-transform: capitalize;
+        font-weight: 800;      
+        font-family: 'Ubuntu', sans-serif;
+      }
+      &:hover {
+        color: $white ;
+      }
+  
+    }
+    
+}

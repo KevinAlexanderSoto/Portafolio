@@ -1,0 +1,20 @@
+/* automaticamete compila a css en la carpeta assets/css frfrf*/
+
+@use 'custom';
+
+// IMPORT THE COMPONENTS 
+ @use 'components/animations';
+@use 'components/buttons';
+@use 'components/mixins';
+@use 'components/typography'; 
+
+
+// IMPORT THE SECTIONS 
+@use 'sections/navbar';
+ @use 'sections/intro-section';
+ @use 'sections/campanies';
+
+@use 'sections/portfolio';
+
+@use 'sections/footer';
+ 
