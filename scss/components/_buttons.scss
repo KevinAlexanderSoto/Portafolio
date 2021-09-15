@@ -3,7 +3,7 @@
 
 // BOTTON NO LO ESTOY USANDO 
 
-.btn-rounded { //para boton de numero telefonico en el navbar
+.btn-rounded { //para boton  en el navbar
     @include media-breakpoint-down(sm){ // esconde este boton en dispositivos pequeños
         display: none;
     }
@@ -34,7 +34,7 @@
     }
 
     &:hover {// cuando se para en el botton se palica esto 
-        @include gradient;
+       @include gradientbutton;
         color: $white;
 
         span {

@@ -4,7 +4,9 @@
 @mixin gradient {
     background: linear-gradient(to left, rgba($primary, 0.80), rgba($secondary, 0.99));
 }
-
+@mixin gradientbutton {
+    background: linear-gradient(to left, rgba($primary, 0.80), rgba($black, 0.99));
+}
 // ABSOLUTE CENTER 
 @mixin absoluteCenter {
     position: absolute;
