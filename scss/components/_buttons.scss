@@ -42,3 +42,23 @@
         }
     }
 }
+
+.btn-rounded-portfolio { //para boton  en el portfolio
+  
+    position: relative;
+    padding: 0.8375rem 2rem 0.8375rem 1rem;
+    font-weight: 700;
+    margin: 0;
+    background-color: $white;
+    display: block;
+
+
+    &:hover {// cuando se para en el botton se palica esto 
+       @include gradientbutton;
+        color: $white;
+
+        span {
+            background-color: rgba($black, 0.6);
+        }
+    }
+}
