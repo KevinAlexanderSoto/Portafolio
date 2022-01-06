@@ -6257,6 +6257,7 @@ textarea.form-control-lg {
 }
 
 .sticky-top {
+  position: -webkit-sticky;
   position: sticky;
   top: 0;
   z-index: 1020;
@@ -6264,6 +6265,7 @@ textarea.form-control-lg {
 
 @media (min-width: 576px) {
   .sticky-sm-top {
+    position: -webkit-sticky;
     position: sticky;
     top: 0;
     z-index: 1020;
@@ -6271,6 +6273,7 @@ textarea.form-control-lg {
 }
 @media (min-width: 768px) {
   .sticky-md-top {
+    position: -webkit-sticky;
     position: sticky;
     top: 0;
     z-index: 1020;
@@ -6278,6 +6281,7 @@ textarea.form-control-lg {
 }
 @media (min-width: 992px) {
   .sticky-lg-top {
+    position: -webkit-sticky;
     position: sticky;
     top: 0;
     z-index: 1020;
@@ -6285,6 +6289,7 @@ textarea.form-control-lg {
 }
 @media (min-width: 1200px) {
   .sticky-xl-top {
+    position: -webkit-sticky;
     position: sticky;
     top: 0;
     z-index: 1020;
@@ -6292,6 +6297,7 @@ textarea.form-control-lg {
 }
 @media (min-width: 1400px) {
   .sticky-xxl-top {
+    position: -webkit-sticky;
     position: sticky;
     top: 0;
     z-index: 1020;
@@ -6451,6 +6457,7 @@ textarea.form-control-lg {
 }
 
 .position-sticky {
+  position: -webkit-sticky !important;
   position: sticky !important;
 }
 
@@ -10934,10 +10941,26 @@ textarea.form-control-lg {
   line-height: 2.5rem;
 }
 .btn-rounded:hover {
-  background: linear-gradient(to left, rgba(0, 0, 0, 0.8), rgba(255, 255, 255, 0.99));
+  background: linear-gradient(to left, rgba(1, 150, 255, 0.8), rgba(0, 0, 0, 0.99));
   color: #fff;
 }
 .btn-rounded:hover span {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.btn-rounded-portfolio {
+  position: relative;
+  padding: 0.8375rem 2rem 0.8375rem 1rem;
+  font-weight: 700;
+  margin: 0;
+  background-color: #fff;
+  display: block;
+}
+.btn-rounded-portfolio:hover {
+  background: linear-gradient(to left, rgba(1, 150, 255, 0.8), rgba(0, 0, 0, 0.99));
+  color: #fff;
+}
+.btn-rounded-portfolio:hover span {
   background-color: rgba(0, 0, 0, 0.6);
 }
 
@@ -11033,11 +11056,8 @@ textarea.form-control-lg {
   color: #212529 !important;
   padding: 0 0.7rem;
   text-transform: capitalize;
-  font-weight: 800;
+  font-weight: 900;
   font-family: "Ubuntu", sans-serif;
-}
-.menu li:hover {
-  color: #fff;
 }
 
 .intro-section {
@@ -11160,7 +11180,7 @@ h4 {
 }
 
 .footer {
-  padding-top: 1rem;
+  padding-top: 1.5rem;
   background-color: black;
 }
 
@@ -11211,7 +11231,7 @@ h4 {
 }
 @media (min-width: 576px) {
   .footer-sm a i {
-    font-size: 1.6rem;
+    font-size: 1.9rem;
   }
 }
 .footer-sm a:hover {
