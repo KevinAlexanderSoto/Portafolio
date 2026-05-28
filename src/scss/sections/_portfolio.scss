@@ -1,0 +1,78 @@
+@use '../custom' as *;
+
+.portfolio {
+    padding: 6rem 0;
+    background-color: $white;
+
+    .portfolio-box {
+        background-color: $white;
+        border-radius: 1rem;
+        overflow: hidden;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        transition: all 0.3s ease;
+        border: 1px solid $gray-200;
+
+        &:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1) !important;
+            border-color: $primary;
+        }
+
+        &__image-wrapper {
+            width: 100%;
+            height: 250px;
+            overflow: hidden;
+            background-color: $gray-100;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                transition: transform 0.5s ease;
+            }
+        }
+
+        &:hover &__image-wrapper img {
+            transform: scale(1.1);
+        }
+
+        &__content {
+            padding: 1.5rem;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+
+            h4 {
+                font-weight: 700;
+                color: $gray-900;
+                margin-bottom: 0.5rem;
+            }
+
+            p {
+                color: $gray-600;
+                font-size: 0.9rem;
+                margin-bottom: 1.5rem;
+                flex-grow: 1;
+            }
+
+            .btn-rounded-portfolio {
+                width: 100%;
+                padding: 0.6rem;
+                font-size: 0.9rem;
+                font-weight: 600;
+                border: 2px solid $primary;
+                background-color: transparent;
+                color: $primary;
+                border-radius: 50px;
+                transition: all 0.3s;
+
+                &:hover {
+                    background-color: $primary;
+                    color: $white;
+                }
+            }
+        }
+    }
+}

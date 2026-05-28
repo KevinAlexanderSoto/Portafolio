@@ -1,0 +1,106 @@
+@use '../custom' as *;
+
+.footer {
+    background-color: #151515;
+    padding-top: 5rem;
+    color: $white;
+
+    .contact-box {
+        margin-bottom: 3rem;
+
+        &__icon {
+            color: $primary;
+            margin-right: 1.5rem;
+            
+            svg {
+                width: 3rem;
+                height: 3rem;
+                stroke: currentColor;
+            }
+        }
+
+        &__info {
+            &--title {
+                display: block;
+                font-size: 1.25rem;
+                font-weight: 700;
+                color: $white;
+                text-decoration: none;
+                margin-bottom: 0.25rem;
+                transition: color 0.3s;
+
+                &:hover {
+                    color: $primary;
+                }
+            }
+
+            &--subtitle {
+                color: $gray-500;
+                font-size: 0.9rem;
+                margin: 0;
+            }
+        }
+    }
+
+    .footer-sm {
+        background-color: rgba($white, 0.05);
+        padding: 2rem 0;
+        border-top: 1px solid rgba($white, 0.1);
+
+        .social-text {
+            font-weight: 500;
+            color: $gray-400;
+        }
+
+        a {
+            color: $gray-400;
+            font-size: 1.5rem;
+            margin-left: 1.5rem;
+            transition: all 0.3s;
+            display: inline-block;
+
+            &:hover {
+                color: $primary;
+                transform: translateY(-3px);
+            }
+        }
+    }
+
+    .footer-bottom {
+        padding: 2rem 0;
+        font-size: 0.9rem;
+        color: $gray-600;
+
+        a {
+            color: $gray-400;
+            text-decoration: none;
+            font-weight: 600;
+
+            &:hover {
+                color: $primary;
+            }
+        }
+    }
+}
+
+.back-to-top {
+    position: fixed;
+    right: 2rem;
+    bottom: 2rem;
+    width: 3.5rem;
+    height: 3.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    transition: all 0.3s;
+    background-color: $primary;
+    color: $white;
+    text-decoration: none;
+
+    &:hover {
+        background-color: darken($primary, 10%);
+        transform: translateY(-5px);
+        color: $white;
+    }
+}

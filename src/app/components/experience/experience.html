@@ -1,0 +1,23 @@
+<section id="experience" class="experience py-5">
+  <div class="container">
+    <div class="row text-center mb-5">
+      <h1 class="display-3 fw-bold">Professional Experience</h1>
+      <div class="heading-line"></div>
+    </div>
+    <div class="row">
+      <div class="col-md-10 mx-auto">
+        @for (job of jobs; track job.company) {
+          <div class="experience-item mb-5">
+            <h3 class="fw-bold">{{ job.role }}</h3>
+            <h5 class="text-primary">{{ job.company }} | <small class="text-muted">{{ job.period }}</small></h5>
+            <ul class="mt-3">
+              @for (point of job.description; track point) {
+                <li class="mb-2">{{ point }}</li>
+              }
+            </ul>
+          </div>
+        }
+      </div>
+    </div>
+  </div>
+</section>

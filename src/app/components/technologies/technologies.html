@@ -1,0 +1,30 @@
+<section id="technologies" class="campanies py-5">
+  <div class="container">
+    <div class="row text-center mb-5">
+      <h1 class="display-3 fw-bold">Skills & Technologies</h1>
+      <div class="heading-line"></div>
+    </div>
+    
+    <div class="row text-center mb-5">
+      <h4 class="fw-bold mb-4">Core Stack</h4>
+      @for (tech of coreTechs; track tech.name) {
+        <div class="col-md-3">
+          <div class="campanies__logo-box shadow-sm p-3">
+            <h5 class="mt-2">{{ tech.name }}</h5>
+          </div>
+        </div>
+      }
+    </div>
+
+    <div class="row text-center mt-5">
+      <h4 class="fw-bold mb-4">Architecture & Quality</h4>
+      <div class="col-12">
+        <div class="d-flex flex-wrap justify-content-center gap-2">
+          @for (skill of architectureSkills; track skill) {
+            <span class="badge bg-primary p-3 rounded-pill" style="font-size: 1.1rem;">{{ skill }}</span>
+          }
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
